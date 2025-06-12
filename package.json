@@ -2,7 +2,7 @@
   "name": "escolaapp-vuejs",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Gestao Escolar App",
+  "productName": "Gestão Escolar App",
   "author": "felipe <felipemiritz@yahoo.com.br>",
   "type": "module",
   "private": true,

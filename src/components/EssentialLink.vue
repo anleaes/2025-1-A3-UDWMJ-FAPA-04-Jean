@@ -1,9 +1,7 @@
 <template>
   <q-item
-    clickable
-    tag="a"
-    target="_blank"
-    :href="link"
+    :to="route"
+    exact
   >
     <q-item-section
       v-if="icon"
@@ -35,9 +33,9 @@ export default defineComponent({
       default: ''
     },
 
-    link: {
+    route: {
       type: String,
-      default: '#'
+      default: ''
     },
 
     icon: {
