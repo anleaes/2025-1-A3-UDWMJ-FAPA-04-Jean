@@ -15,7 +15,6 @@
           Gestão Escolar App
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -55,6 +54,12 @@ const linksList = [
     caption: 'Página Principal do App',
     icon: 'home',
     route: { name: 'home' },
+  },
+    {
+    title: 'Alunos',
+    caption: 'Gerencie alunos',
+    icon: 'person',
+    route: { name: 'alunos' },
   },
 ]
 
