@@ -1,22 +1,103 @@
 {
   "alunos": [
-    {"nome": "Felipe", "sobrenome": "Souza", "genero": "H", "anoNascimento": 2000},
-    {"nome": "Vitoria", "sobrenome": "Soares", "genero": "M", "anoNascimento": 1996},
-    {"nome": "Vítor", "sobrenome": "Lessa", "genero": "H", "anoNascimento": 2002}
+    {
+      "nome": "Felipe",
+      "sobrenome": "Souza",
+      "genero": "H",
+      "anoNascimento": 2000,
+      "id": "763b"
+    },
+    {
+      "nome": "Vitoria",
+      "sobrenome": "Soares",
+      "genero": "M",
+      "anoNascimento": 1996,
+      "id": "0dfb"
+    },
+    {
+      "nome": "Vítor",
+      "sobrenome": "Lessa",
+      "genero": "H",
+      "anoNascimento": 2002,
+      "id": "90db"
+    },
+    {
+      "id": "ffa1",
+      "nome": "teste",
+      "sobrenome": "testando",
+      "genero": "O",
+      "anoNascimento": "2000"
+    },
+    {
+      "id": "417c",
+      "nome": "teste",
+      "sobrenome": "testando2",
+      "genero": "M",
+      "anoNascimento": "2002"
+    },
+    {
+      "id": "b076",
+      "nome": "Luciano",
+      "sobrenome": "wdwd",
+      "genero": "M",
+      "anoNascimento": "2000"
+    }
   ],
   "professores": [
-    {"nome": "Antônio", "sobrenome": "Nunes", "genero": "H", "anoNascimento": 1988},
-    {"nome": "Fabiana", "sobrenome": "Rodrigues", "genero": "M", "anoNascimento": 1969},
-    {"nome": "Renata", "sobrenome": "Da Rosa", "genero": "M", "anoNascimento": 1983}
+    {
+      "nome": "Antônio",
+      "sobrenome": "Nunes",
+      "genero": "H",
+      "anoNascimento": 1988,
+      "id": "6f00"
+    },
+    {
+      "nome": "Fabiana",
+      "sobrenome": "Rodrigues",
+      "genero": "M",
+      "anoNascimento": 1969,
+      "id": "8e00"
+    },
+    {
+      "nome": "Renata",
+      "sobrenome": "Da Rosa",
+      "genero": "M",
+      "anoNascimento": 1983,
+      "id": "7c32"
+    }
   ],
   "salas": [
-    {"numero": 1, "localizacao": "Perto da cantina"},
-    {"numero": 44, "localizacao": "Dentro do prédio 2A"},
-    {"numero": 101, "localizacao": "Após o portão norte"}
+    {
+      "numero": 1,
+      "localizacao": "Perto da cantina",
+      "id": "b941"
+    },
+    {
+      "numero": 44,
+      "localizacao": "Dentro do prédio 2A",
+      "id": "55e3"
+    },
+    {
+      "numero": 101,
+      "localizacao": "Após o portão norte",
+      "id": "0986"
+    }
   ],
   "turmas": [
-    {"idTurma:": "202-A", "maxAlunos": 30},
-    {"idTurma:": "9-B", "maxAlunos": 30},
-    {"idTurma:": "MED-103", "maxAlunos": 60}
+    {
+      "idTurma:": "202-A",
+      "maxAlunos": 30,
+      "id": "08f1"
+    },
+    {
+      "idTurma:": "9-B",
+      "maxAlunos": 30,
+      "id": "ce8d"
+    },
+    {
+      "idTurma:": "MED-103",
+      "maxAlunos": 60,
+      "id": "c7f4"
+    }
   ]
 }

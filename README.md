@@ -1,40 +1,15 @@
-# Gestao Escolar App (escolaapp-vuejs)
+# Gestão Escolar App (escolaapp-vuejs)
 
-A Quasar Project
+Projeto para A3 de Usabilidade e Desenvolvimento Web utilizando Vue.JS e Quasar.Dev.<br>
+Trata-se de um projeto de gestão escolar onde é possível adicionar, editar e excluir alunos, professores, etc.<br>
+No repositório há um arquivo chamado 'db.json' para simular um banco de dados. Ele deve ser utilizado com o app JSON-Server.
 
-## Install the dependencies
+## Instalar dependências
 ```bash
-yarn
-# or
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Iniciar o aplicativo em mode de desenvolvimento
 ```bash
-quasar dev
+quasar run dev
 ```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
