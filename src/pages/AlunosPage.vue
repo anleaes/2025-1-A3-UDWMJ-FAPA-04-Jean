@@ -58,7 +58,7 @@ export default defineComponent({
         console.error(error)
       }
     }
-    //TO DO: CONSERTAR EXCLUSÃO
+    //TO DO: CONSERTAR  EXCLUSÃO
     const handleDeleteAluno = async (id) => {
       try {
         $q.dialog({
