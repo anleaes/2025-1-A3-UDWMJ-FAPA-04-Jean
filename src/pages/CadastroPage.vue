@@ -40,11 +40,11 @@ const router = useRouter()
 const auth = getAuth()
 
 const register = () => {
-    createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+    createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((data) => { // eslint-disable-line
         console.log("Você cadastrou-se com sucesso!")
         console.log(auth.currentUser)
-        router.push('')
+        router.push('/')
     })
     .catch((error) => {
         console.log(error.code)
