@@ -10,8 +10,12 @@
       :columns="columns"
       row-key="name"
     >
-     <template v-slot:body-cell-actions="props">
-        <q-td :props="props">
+      <template v-slot:top-right>
+          <q-btn color="primary" label="Adicionar Aluno" :to="{ name: 'formAluno' }" />
+      </template>
+      <template v-slot:body-cell-actions="props">
+        <q-td :props="props" class="q-gutter-sm"> 
+          <q-btn icon="edit" color="info" size="sm" @click="handleEditAluno(props.row.id)"/>
           <q-btn icon="delete" color="negative" size="sm" @click="handleDeleteAluno(props.row.id)"/>
         </q-td>
       </template>
@@ -22,6 +26,7 @@
 <script>
 import { defineComponent, ref, onMounted } from 'vue'
 import { useQuasar } from 'quasar'
+import { useRouter } from 'vue-router'
 import listAlunosService from "../services/lists.js"
 
 
@@ -29,8 +34,10 @@ export default defineComponent({
   name: 'AlunosPage',
   setup() {
     const rows = ref([])
+    const router = useRouter()
     const { list, remove } = listAlunosService()
     const columns = [
+      { name: 'id', field: 'id', label: 'ID', sortable: true, align: 'left' },
       { name: 'nome', field: 'nome', label: 'Nome', sortable: true, align: 'left' },
       { name: 'sobrenome', field: 'sobrenome', label: 'Sobrenome', sortable: true, align: 'left' },
       { name: 'genero', field: 'genero', label: 'Gênero', sortable: true, align: 'left' },
@@ -51,7 +58,7 @@ export default defineComponent({
         console.error(error)
       }
     }
-
+    //TO DO: CONSERTAR EXCLUSÃO
     const handleDeleteAluno = async (id) => {
       try {
         $q.dialog({
@@ -69,10 +76,15 @@ export default defineComponent({
       }
     }
 
+    const handleEditAluno = async (id) => {
+      router.push({ name: 'formAluno', params: { id } })
+    }
+
     return { 
       rows,
       columns, 
-      handleDeleteAluno 
+      handleDeleteAluno,
+      handleEditAluno 
     }
   }
 })

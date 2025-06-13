@@ -14,7 +14,7 @@
     {"numero": 44, "localizacao": "Dentro do prédio 2A"},
     {"numero": 101, "localizacao": "Após o portão norte"}
   ],
-  "Turmas": [
+  "turmas": [
     {"idTurma:": "202-A", "maxAlunos": 30},
     {"idTurma:": "9-B", "maxAlunos": 30},
     {"idTurma:": "MED-103", "maxAlunos": 60}
