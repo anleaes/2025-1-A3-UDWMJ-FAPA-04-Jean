@@ -23,6 +23,7 @@
                 :rules="[ val => val && val.length > 0 || 'Campo Obrigatório.']"  
             />  
             <div class="col-12 q-gutter-sm">
+                <q-btn label="Logar com Google" color="info" class="float-right" icon="G" @click="signInWithGoogle"/>
                 <q-btn label="Cadastrar" color="primary" class="float-right" icon="save" @click="register"/>
             </div>
         </q-form>
@@ -32,7 +33,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 const email = ref('')
 const password = ref('')
@@ -51,6 +52,19 @@ const register = () => {
         alert(error.message)
     })
 }
+
+const signInWithGoogle = () => {
+    const provider = new GoogleAuthProvider()
+    signInWithPopup(getAuth(), provider) 
+    .then((result) => {
+        console.log(result.user);
+        router.push("/")
+    })
+    .catch((error) => {
+        console.error(error)
+    })
+}
+
 </script>
 
 <style scoped>
