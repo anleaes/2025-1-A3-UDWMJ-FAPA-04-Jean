@@ -51,15 +51,45 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Home',
-    caption: 'Página Principal do App',
+    caption: 'Página Principal',
     icon: 'home',
     route: { name: 'home' },
   },
-    {
+  {
+    title: 'Cadastro',
+    caption: 'Crie uma conta',
+    icon: 'person_add',
+    route: { name: 'cadastro' },
+  },
+  {
+    title: 'Login',
+    caption: 'Acesse sua conta',
+    icon: 'login',
+    route: { name: 'signin' },
+  },
+  {
     title: 'Alunos',
     caption: 'Gerencie alunos',
-    icon: 'person',
+    icon: 'face',
     route: { name: 'alunos' },
+  },
+  {
+    title: 'Professores',
+    caption: 'Gerencie professores',
+    icon: 'school',
+    route: { name: 'professores' },
+  },   
+  {
+    title: 'Salas',
+    caption: 'Gerencie salas',
+    icon: 'location_on',
+    route: { name: 'salas' },
+  },
+  {
+    title: 'Turmas',
+    caption: 'Gerencie turmas',
+    icon: 'book',
+    route: { name: 'turmas' },
   },
 ]
 
