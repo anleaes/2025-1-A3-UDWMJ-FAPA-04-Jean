@@ -11,7 +11,9 @@ const routes = [
       { path: '/professores', name: "professores", component: () => import('src/pages/ProfessoresPage.vue') },
       { path: '/form-professor/:id?', name: "formProfessor", component: () => import('src/pages/FormProfessor.vue') },
       { path: '/salas', name: "salas", component: () => import('src/pages/SalasPage.vue') },
-      { path: '/form-sala/:id?', name: "formSala", component: () => import('src/pages/FormSala.vue') }
+      { path: '/form-sala/:id?', name: "formSala", component: () => import('src/pages/FormSala.vue') },
+      { path: '/turmas', name: "turmas", component: () => import('src/pages/TurmasPage.vue') },
+      { path: '/form-turma/:id?', name: "formTurma", component: () => import('src/pages/FormTurma.vue') }
     ]
   },
 
