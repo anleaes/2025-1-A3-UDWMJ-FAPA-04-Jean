@@ -49,6 +49,7 @@
       "sobrenome": "Nunes",
       "genero": "H",
       "anoNascimento": 1988,
+      "especializacao": "Educação Física",
       "id": "6f00"
     },
     {
@@ -56,6 +57,7 @@
       "sobrenome": "Rodrigues",
       "genero": "M",
       "anoNascimento": 1969,
+      "especializacao": "Filosofia",
       "id": "8e00"
     },
     {
@@ -63,6 +65,7 @@
       "sobrenome": "Da Rosa",
       "genero": "M",
       "anoNascimento": 1983,
+      "especializacao": "Biologia",
       "id": "7c32"
     }
   ],
@@ -85,17 +88,17 @@
   ],
   "turmas": [
     {
-      "idTurma:": "202-A",
+      "nome:": "202-A",
       "maxAlunos": 30,
       "id": "08f1"
     },
     {
-      "idTurma:": "9-B",
+      "nome:": "9-B",
       "maxAlunos": 30,
       "id": "ce8d"
     },
     {
-      "idTurma:": "MED-103",
+      "nome:": "MED-103",
       "maxAlunos": 60,
       "id": "c7f4"
     }
