@@ -15,5 +15,5 @@ npm install
 
 ### Iniciar o aplicativo em modo de desenvolvimento
 ```bash
-quasar run dev
+npm run dev
 ```
